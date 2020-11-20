@@ -1,5 +1,5 @@
-mod selector;
 mod visitor;
+mod action;
 
-pub use selector::Selector;
+pub use action::{Action, SelectorItem, TypeSelector, FieldSelector};
 pub use visitor::Visitor;
