@@ -1,0 +1,26 @@
+[package]
+name = "Metamorfish"
+version = "0.0.1"
+authors = ["Mikko Rantanen <jubjub@jubjubnest.net>"]
+edition = "2018"
+description = """
+Metamorfish is a data mutation library based on CSS-like selectors and mutation
+actions.
+"""
+documentation = "https://docs.rs/metamorfish"
+repository = "https://github.com/Rantanen/metamorfish"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4"
+protofish = { version = "0.2" }
+rpds = "0.8"
+
+[dev-dependencies]
+test-env-log = "0.2"
+env_logger = "0.8"
+
+[patch.crates-io]
+protofish = { path = "../protofish" }
